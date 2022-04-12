@@ -1,0 +1,195 @@
+{
+  "@context" : {
+    "hasProfession" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SeriesElement" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+    },
+    "isBeforeEpisode" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode",
+      "@type" : "@id"
+    },
+    "hasSettingYear" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+    },
+    "hasSeasonNumber" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+    },
+    "CharacterTrait" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait"
+    },
+    "Organization" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization"
+    },
+    "Witch" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch"
+    },
+    "hasSettingPlace" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director"
+    },
+    "hasEpisodeNumber" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+    },
+    "hasCharacterRole" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole",
+      "@type" : "@id"
+    },
+    "Vampire" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire"
+    },
+    "isPartOf" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf",
+      "@type" : "@id"
+    },
+    "Human" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+    },
+    "hasNumber" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+    },
+    "hasEpisode" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode",
+      "@type" : "@id"
+    },
+    "isAfterEpisode" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode",
+      "@type" : "@id"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+    },
+    "isSettingPlaceOf" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf",
+      "@type" : "@id"
+    },
+    "isBefore" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person"
+    },
+    "Murderer" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer"
+    },
+    "Deceased" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+    },
+    "hasKilled" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled",
+      "@type" : "@id"
+    },
+    "Building" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building"
+    },
+    "isDirectedBy" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy",
+      "@type" : "@id"
+    },
+    "isDirectorOf" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf",
+      "@type" : "@id"
+    },
+    "isFromSeason" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason",
+      "@type" : "@id"
+    },
+    "hasMember" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember",
+      "@type" : "@id"
+    },
+    "isAfterSeason" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason",
+      "@type" : "@id"
+    },
+    "Family" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family"
+    },
+    "isParentOf" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf",
+      "@type" : "@id"
+    },
+    "Place" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+    },
+    "Ghost" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost"
+    },
+    "isKilledBy" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy",
+      "@type" : "@id"
+    },
+    "isAfter" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter",
+      "@type" : "@id"
+    },
+    "isPlayedBy" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy",
+      "@type" : "@id"
+    },
+    "SupernaturalPowersPossessor" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City"
+    },
+    "State" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State"
+    },
+    "CharacterGroup" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "RealPerson" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasPlace" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace",
+      "@type" : "@id"
+    },
+    "hasAppearanceIn" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn",
+      "@type" : "@id"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+    },
+    "isBeforeSeason" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason",
+      "@type" : "@id"
+    },
+    "isLocatedIn" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn",
+      "@type" : "@id"
+    },
+    "isChildOf" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf",
+      "@type" : "@id"
+    },
+    "hasCharacter" : {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter",
+      "@type" : "@id"
+    }
+  }
+}

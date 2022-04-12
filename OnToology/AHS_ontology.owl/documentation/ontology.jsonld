@@ -1,0 +1,1453 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid19"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid22"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid24"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#g"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#g"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid27"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid29"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid40"
+    }, {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid36"
+    }, {
+      "@id" : "_:genid34"
+    }, {
+      "@id" : "_:genid32"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid42"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building"
+    }, {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City"
+    }, {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost"
+    }, {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+    }, {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire"
+    }, {
+      "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "American Horror Story ontology"
+  }, {
+    "@value" : "Ontology created by Ester Fernández Padrós"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person whose job is to play a character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alexandra_Breckenridge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alfonso_Gomez_Rejon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Manor"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1964"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/American_Horror_Story:_Asylum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#New_Orleans"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2013"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Los_Angeles"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2011"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/American_Horror_Story:_Murder_House"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession" : [ {
+    "@value" : "Psychiatrist"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Dylan_McDermott"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bradley_Buecker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Manor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Staff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place that is a building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person that only exists in a fictional story."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Group of fictional people according to their relationship."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Qualities that characters can have."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place that is a city."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Connie_Britton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The character that has this quality is dead."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person whose job is to direct an audiovisual piece."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Dylan_McDermott",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A fragment of a season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Evan_Peters"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Group of characters who belong to the same family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Frances_Conroy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person who is a ghost."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Harmon_Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person who is a human."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#James_Wong",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Jessica_Lange"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Sarah_Paulson"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Langdon_Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Los_Angeles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Louisiana"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alexandra_Breckenridge"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Frances_Conroy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The character that has this quality is a murderer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#New_Orleans",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Nora_Montgomery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Group of characters who belong to the same company or have formed some kind of alliance or band."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An intelligent individual."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Physical space where the series story can happen."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person that exists."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ryan_Murphy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Sarah_Paulson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Sarah_Paulson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A season is a set of episodes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An element that constitutes a series."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place that is a state from United States."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The character that has this quality has supernatural powers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person who is a vampire."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Connie_Britton"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person who is a witch."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Zoe_Benson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft"
+  } ],
+  "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates what chapters or seasons the character appears."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates what characters has a chapter or a season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates what character roles has an actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates a season episode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates what characters has been killed by the character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates what characters are members of the group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates a place that is located in the current place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the season number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the place where is set the the season story."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the year that a season story is set."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the element series that is after the current element."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the episode that is after the current episode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the season that is after the current season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the element series that is before the current element."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the episode that is before the current episode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the season that is before the current season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates who is the parent of a character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the episode director."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates an episode directed by the director."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the episode season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates who has killed the character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates where a place is located."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates who is the child of a character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the group of a character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the actor who plays the role of the current character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the season that has this place as setting place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#e",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#g",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#w",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

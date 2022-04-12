@@ -1,0 +1,806 @@
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story> <http://www.w3.org/2000/01/rdf-schema#comment> "American Horror Story ontology" .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology created by Ester Fernández Padrós" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates what chapters or seasons the character appears." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates what characters has a chapter or a season." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates what character roles has an actor" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a season episode." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates what characters has been killed by the character." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates what characters are members of the group." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a place that is located in the current place." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the place where is set the the season story." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the element series that is after the current element." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the episode that is after the current episode." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the season that is after the current season." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the element series that is before the current element." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the episode that is before the current episode." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the season that is before the current season." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates who is the parent of a character." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the episode director." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates an episode directed by the director." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the episode season." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates who has killed the character." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates where a place is located." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates who is the child of a character." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the group of a character." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the actor who plays the role of the current character." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the season that has this place as setting place." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the season number." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the year that a season story is set." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "A person whose job is to play a character." .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Actor" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "A place that is a building." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that only exists in a fictional story." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of fictional people according to their relationship." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait> <http://www.w3.org/2000/01/rdf-schema#comment> "Qualities that characters can have." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City> <http://www.w3.org/2000/01/rdf-schema#comment> "A place that is a city." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased> <http://www.w3.org/2000/01/rdf-schema#comment> "The character that has this quality is dead." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "A person whose job is to direct an audiovisual piece." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "A fragment of a season." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of characters who belong to the same family" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who is a ghost." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who is a human." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer> <http://www.w3.org/2000/01/rdf-schema#comment> "The character that has this quality is a murderer." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of characters who belong to the same company or have formed some kind of alliance or band." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "An intelligent individual." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical space where the series story can happen." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that exists." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "A season is a set of episodes." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement> <http://www.w3.org/2000/01/rdf-schema#comment> "An element that constitutes a series." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State> <http://www.w3.org/2000/01/rdf-schema#comment> "A place that is a state from United States." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor> <http://www.w3.org/2000/01/rdf-schema#comment> "The character that has this quality has supernatural powers." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who is a vampire." .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who is a witch." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alexandra_Breckenridge
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alexandra_Breckenridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alexandra_Breckenridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alfonso_Gomez_Rejon
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alfonso_Gomez_Rejon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alfonso_Gomez_Rejon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alfonso_Gomez_Rejon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alfonso_Gomez_Rejon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Manor> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear> "1964"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/American_Horror_Story:_Asylum" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#New_Orleans> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear> "2013"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Los_Angeles> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear> "2011"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/American_Horror_Story:_Murder_House" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Dylan_McDermott> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession> "Psychiatrist" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bradley_Buecker
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bradley_Buecker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bradley_Buecker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bradley_Buecker> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bradley_Buecker> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Manor
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Manor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Manor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Manor> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Staff
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Staff> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Staff> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Connie_Britton
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Connie_Britton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Connie_Britton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Dylan_McDermott
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Dylan_McDermott> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Dylan_McDermott> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Evan_Peters" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Frances_Conroy
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Frances_Conroy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Frances_Conroy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Harmon_Family
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Harmon_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Harmon_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Harmon_Family> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Harmon_Family> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Harmon_Family> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#James_Wong
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#James_Wong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#James_Wong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#James_Wong> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Jessica_Lange" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Sarah_Paulson> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Langdon_Family
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Langdon_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Langdon_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Langdon_Family> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Langdon_Family> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Los_Angeles
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Los_Angeles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Los_Angeles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Los_Angeles> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Louisiana" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#New_Orleans
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#New_Orleans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#New_Orleans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#New_Orleans> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Nora_Montgomery
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Nora_Montgomery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Nora_Montgomery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Nora_Montgomery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Nora_Montgomery> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Nora_Montgomery> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ryan_Murphy
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ryan_Murphy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ryan_Murphy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ryan_Murphy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Sarah_Paulson
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Sarah_Paulson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Sarah_Paulson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Sarah_Paulson> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Sarah_Paulson" .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Connie_Britton> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Zoe_Benson
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Zoe_Benson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Zoe_Benson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Zoe_Benson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Zoe_Benson> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Zoe_Benson> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga> .
+# 
+# http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alexandra_Breckenridge> .
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Frances_Conroy> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid4 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid8 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid13 <http://www.w3.org/2003/11/swrl#body> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid15 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid17 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/2003/11/swrl#head> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid19 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid20 <http://www.w3.org/2003/11/swrl#body> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#g> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/2003/11/swrl#head> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#g> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid25 <http://www.w3.org/2003/11/swrl#body> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid27 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/2003/11/swrl#head> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid30 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e> .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid32 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid34 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid36 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid38 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e> .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid40 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid42 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
