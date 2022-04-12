@@ -1,0 +1,880 @@
+@prefix : <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#> .
+
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story> rdf:type owl:Ontology ;
+                                                                            rdfs:comment "American Horror Story ontology" ,
+                                                                                         "Ontology created by Ester Fernández Padrós" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasAppearanceIn
+:hasAppearanceIn rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :hasCharacter ;
+                 rdfs:domain :Character ;
+                 rdfs:range :SeriesElement ;
+                 rdfs:comment "Indicates what chapters or seasons the character appears." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacter
+:hasCharacter rdf:type owl:ObjectProperty ;
+              rdfs:domain :SeriesElement ;
+              rdfs:range :Character ;
+              rdfs:comment "Indicates what characters has a chapter or a season." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasCharacterRole
+:hasCharacterRole rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :isPlayedBy ;
+                  rdfs:domain :Actor ;
+                  rdfs:range :Character ;
+                  rdfs:comment "Indicates what character roles has an actor" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisode
+:hasEpisode rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isFromSeason ;
+            rdfs:domain :Season ;
+            rdfs:range :Episode ;
+            rdfs:comment "Indicates a season episode." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasKilled
+:hasKilled rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isKilledBy ;
+           rdfs:domain :Character ;
+           rdfs:range :Character ;
+           rdfs:comment "Indicates what characters has been killed by the character." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isPartOf ;
+           rdfs:domain :CharacterGroup ;
+           rdfs:range :Character ;
+           rdfs:comment "Indicates what characters are members of the group." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasPlace
+:hasPlace rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isLocatedIn ;
+          rdf:type owl:TransitiveProperty ;
+          rdfs:domain :Place ;
+          rdfs:range :Place ;
+          rdfs:comment "Indicates a place that is located in the current place." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingPlace
+:hasSettingPlace rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isSettingPlaceOf ;
+                 rdfs:domain :Season ;
+                 rdfs:range :Place ;
+                 rdfs:comment "Indicates the place where is set the the season story." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfter
+:isAfter rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isBefore ;
+         rdf:type owl:IrreflexiveProperty ;
+         rdfs:domain :SeriesElement ;
+         rdfs:range :SeriesElement ;
+         rdfs:comment "Indicates the element series that is after the current element." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterEpisode
+:isAfterEpisode rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :isAfter ;
+                owl:inverseOf :isBeforeEpisode ;
+                rdf:type owl:IrreflexiveProperty ;
+                rdfs:domain :Episode ;
+                rdfs:range :Episode ;
+                rdfs:comment "Indicates the episode that is after the current episode." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isAfterSeason
+:isAfterSeason rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :isAfter ;
+               owl:inverseOf :isBeforeSeason ;
+               rdf:type owl:IrreflexiveProperty ;
+               rdfs:domain :Season ;
+               rdfs:range :Season ;
+               rdfs:comment "Indicates the season that is after the current season." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBefore
+:isBefore rdf:type owl:ObjectProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :SeriesElement ;
+          rdfs:range :SeriesElement ;
+          rdfs:comment "Indicates the element series that is before the current element." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeEpisode
+:isBeforeEpisode rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isBefore ;
+                 rdf:type owl:IrreflexiveProperty ;
+                 rdfs:domain :Episode ;
+                 rdfs:range :Episode ;
+                 rdfs:comment "Indicates the episode that is before the current episode." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isBeforeSeason
+:isBeforeSeason rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :isBefore ;
+                rdf:type owl:IrreflexiveProperty ;
+                rdfs:domain :Season ;
+                rdfs:range :Season ;
+                rdfs:comment "Indicates the season that is before the current season." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isChildOf
+:isChildOf rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isParentOf ;
+           rdf:type owl:IrreflexiveProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :Character ;
+           rdfs:comment "Indicates who is the parent of a character." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectedBy
+:isDirectedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isDirectorOf ;
+              rdfs:domain :Episode ;
+              rdfs:range :Director ;
+              rdfs:comment "Indicates the episode director." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isDirectorOf
+:isDirectorOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :Director ;
+              rdfs:range :Episode ;
+              rdfs:comment "Indicates an episode directed by the director." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isFromSeason
+:isFromSeason rdf:type owl:ObjectProperty ;
+              rdfs:domain :Episode ;
+              rdfs:range :Season ;
+              rdfs:comment "Indicates the episode season." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isKilledBy
+:isKilledBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Character ;
+            rdfs:comment "Indicates who has killed the character." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty ;
+             rdfs:domain :Place ;
+             rdfs:range :Place ;
+             rdfs:comment "Indicates where a place is located." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isParentOf
+:isParentOf rdf:type owl:ObjectProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Character ;
+            rdfs:comment "Indicates who is the child of a character." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :CharacterGroup ;
+          rdfs:comment "Indicates the group of a character." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isPlayedBy
+:isPlayedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Actor ;
+            rdfs:comment "Indicates the actor who plays the role of the current character." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#isSettingPlaceOf
+:isSettingPlaceOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Place ;
+                  rdfs:range :Season ;
+                  rdfs:comment "Indicates the season that has this place as setting place." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasEpisodeNumber
+:hasEpisodeNumber rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :hasNumber ;
+                  rdfs:domain :Episode ;
+                  rdfs:range xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasNumber
+:hasNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :SeriesElement ;
+           rdfs:range xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasProfession
+:hasProfession rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Character ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSeasonNumber
+:hasSeasonNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :hasNumber ;
+                 rdfs:domain :Season ;
+                 rdfs:range xsd:unsignedInt ;
+                 rdfs:comment "Indicates the season number." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#hasSettingYear
+:hasSettingYear rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Season ;
+                rdfs:range xsd:unsignedInt ;
+                rdfs:comment "Indicates the year that a season story is set." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Actor
+:Actor rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacterRole ;
+                             owl:someValuesFrom :Character
+                           ] ;
+       rdfs:subClassOf :RealPerson ;
+       rdfs:comment "A person whose job is to play a character." ;
+       rdfs:sameAs "https://dbpedia.org/ontology/Actor" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Building
+:Building rdf:type owl:Class ;
+          rdfs:subClassOf :Place ;
+          rdfs:comment "A place that is a building." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :Person ;
+           owl:disjointWith :RealPerson ;
+           rdfs:comment "A person that only exists in a fictional story." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterGroup
+:CharacterGroup rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasMember ;
+                                      owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :Character
+                                    ] ;
+                rdfs:comment "Group of fictional people according to their relationship." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#CharacterTrait
+:CharacterTrait rdf:type owl:Class ;
+                rdfs:comment "Qualities that characters can have." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Place ;
+      rdfs:comment "A place that is a city." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Deceased
+:Deceased rdf:type owl:Class ;
+          rdfs:subClassOf :CharacterTrait ;
+          rdfs:comment "The character that has this quality is dead." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Director
+:Director rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :isDirectorOf ;
+                                owl:someValuesFrom :Episode
+                              ] ;
+          rdfs:subClassOf :RealPerson ;
+          rdfs:comment "A person whose job is to direct an audiovisual piece." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:subClassOf :SeriesElement ;
+         owl:disjointWith :Season ;
+         rdfs:comment "A fragment of a season." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Family
+:Family rdf:type owl:Class ;
+        rdfs:subClassOf :CharacterGroup ;
+        owl:disjointWith :Organization ;
+        rdfs:comment "Group of characters who belong to the same family" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ghost
+:Ghost rdf:type owl:Class ;
+       rdfs:subClassOf :Character ;
+       rdfs:comment "A person who is a ghost." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Character ;
+       rdfs:comment "A person who is a human." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murderer
+:Murderer rdf:type owl:Class ;
+          rdfs:subClassOf :CharacterTrait ;
+          rdfs:comment "The character that has this quality is a murderer." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf :CharacterGroup ;
+              rdfs:comment "Group of characters who belong to the same company or have formed some kind of alliance or band." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "An intelligent individual." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Place
+:Place rdf:type owl:Class ;
+       rdfs:comment "Physical space where the series story can happen." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#RealPerson
+:RealPerson rdf:type owl:Class ;
+            rdfs:subClassOf :Person ;
+            rdfs:comment "A person that exists." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Season
+:Season rdf:type owl:Class ;
+        rdfs:subClassOf :SeriesElement ;
+        rdfs:comment "A season is a set of episodes." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SeriesElement
+:SeriesElement rdf:type owl:Class ;
+               rdfs:comment "An element that constitutes a series." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#State
+:State rdf:type owl:Class ;
+       rdfs:subClassOf :Place ;
+       rdfs:comment "A place that is a state from United States." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#SupernaturalPowersPossessor
+:SupernaturalPowersPossessor rdf:type owl:Class ;
+                             rdfs:subClassOf :CharacterTrait ;
+                             rdfs:comment "The character that has this quality has supernatural powers." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vampire
+:Vampire rdf:type owl:Class ;
+         rdfs:subClassOf :Character ;
+         rdfs:comment "A person who is a vampire." .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Witch
+:Witch rdf:type owl:Class ;
+       rdfs:subClassOf :Character ;
+       rdfs:comment "A person who is a witch." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alexandra_Breckenridge
+:Alexandra_Breckenridge rdf:type owl:NamedIndividual ,
+                                 :Actor .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Alfonso_Gomez_Rejon
+:Alfonso_Gomez_Rejon rdf:type owl:NamedIndividual ,
+                              :Director ;
+                     :isDirectorOf :Bitchcraft ,
+                                   :Home_Invasion .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Asylum
+:American_Horror_Story_Asylum rdf:type owl:NamedIndividual ,
+                                       :Season ;
+                              :hasSettingPlace :Briarcliff_Manor ,
+                                               :Massachusetts ;
+                              :isAfterSeason :American_Horror_Story_Murder_House ;
+                              :isBeforeSeason :American_Horror_Story_Coven ;
+                              :hasSeasonNumber 2 ;
+                              :hasSettingYear 1964 ;
+                              rdfs:sameAs "https://dbpedia.org/page/American_Horror_Story:_Asylum" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Coven
+:American_Horror_Story_Coven rdf:type owl:NamedIndividual ,
+                                      :Season ;
+                             :hasSettingPlace :Louisiana ,
+                                              :New_Orleans ;
+                             :isAfterSeason :American_Horror_Story_Asylum ;
+                             :hasSeasonNumber 3 ;
+                             :hasSettingYear 2013 .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#American_Horror_Story_Murder_House
+:American_Horror_Story_Murder_House rdf:type owl:NamedIndividual ,
+                                             :Season ;
+                                    :hasSettingPlace :California ,
+                                                     :Los_Angeles ;
+                                    :isBeforeSeason :American_Horror_Story_Asylum ;
+                                    :hasSeasonNumber 1 ;
+                                    :hasSettingYear 2011 ;
+                                    rdfs:sameAs "https://dbpedia.org/page/American_Horror_Story:_Murder_House" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ben_Harmon
+:Ben_Harmon rdf:type owl:NamedIndividual ,
+                     :Character ,
+                     :Human ;
+            :hasAppearanceIn :Home_Invasion ,
+                             :Murder_House ,
+                             :Pilot ;
+            :isParentOf :Violet_Harmon ;
+            :isPlayedBy :Dylan_McDermott ;
+            :hasProfession "Psychiatrist" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bitchcraft
+:Bitchcraft rdf:type owl:NamedIndividual ,
+                     :Episode ;
+            :isFromSeason :American_Horror_Story_Coven ;
+            :hasEpisodeNumber 1 .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Bradley_Buecker
+:Bradley_Buecker rdf:type owl:NamedIndividual ,
+                          :Director ;
+                 :isDirectorOf :Murder_House ,
+                               :Welcome_to_Briarcliff .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Manor
+:Briarcliff_Manor rdf:type owl:NamedIndividual ,
+                           :Building ;
+                  :isLocatedIn :Massachusetts .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Briarcliff_Staff
+:Briarcliff_Staff rdf:type owl:NamedIndividual ,
+                           :Organization ;
+                  :hasMember :Jude_Martin ,
+                             :Mary_Eunice_McKee .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#California
+:California rdf:type owl:NamedIndividual ,
+                     :State .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Connie_Britton
+:Connie_Britton rdf:type owl:NamedIndividual ,
+                         :Actor .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Constance_Langdon
+:Constance_Langdon rdf:type owl:NamedIndividual ,
+                            :Character ,
+                            :Human ;
+                   :hasAppearanceIn :Pilot ;
+                   :isParentOf :Tate_Langdon ;
+                   :isPlayedBy :Jessica_Lange .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Dylan_McDermott
+:Dylan_McDermott rdf:type owl:NamedIndividual ,
+                          :Actor .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Evan_Peters
+:Evan_Peters rdf:type owl:NamedIndividual ,
+                      :Actor ;
+             rdfs:sameAs "https://dbpedia.org/page/Evan_Peters" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Frances_Conroy
+:Frances_Conroy rdf:type owl:NamedIndividual ,
+                         :Actor .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Harmon_Family
+:Harmon_Family rdf:type owl:NamedIndividual ,
+                        :Family ;
+               :hasMember :Ben_Harmon ,
+                          :Violet_Harmon ,
+                          :Vivien_Harmon .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Home_Invasion
+:Home_Invasion rdf:type owl:NamedIndividual ,
+                        :Episode ;
+               :isAfterEpisode :Pilot ;
+               :isBeforeEpisode :Murder_House ;
+               :isFromSeason :American_Horror_Story_Murder_House ;
+               :hasEpisodeNumber 2 .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#James_Wong
+:James_Wong rdf:type owl:NamedIndividual ,
+                     :Director ;
+            :isDirectorOf :Tricks_and_Treats .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jessica_Lange
+:Jessica_Lange rdf:type owl:NamedIndividual ,
+                        :Actor ;
+               rdfs:sameAs "https://dbpedia.org/page/Jessica_Lange" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Jude_Martin
+:Jude_Martin rdf:type owl:NamedIndividual ,
+                      :Character ,
+                      :Human ;
+             :hasAppearanceIn :Tricks_and_Treats ,
+                              :Welcome_to_Briarcliff ;
+             :isPlayedBy :Jessica_Lange .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Kit_Walker
+:Kit_Walker rdf:type owl:NamedIndividual ,
+                     :Character ,
+                     :Human ;
+            :hasAppearanceIn :Tricks_and_Treats ,
+                             :Welcome_to_Briarcliff ;
+            :isPlayedBy :Evan_Peters .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lana_Winters
+:Lana_Winters rdf:type owl:NamedIndividual ,
+                       :Character ,
+                       :Human ;
+              :hasAppearanceIn :Tricks_and_Treats ,
+                               :Welcome_to_Briarcliff ;
+              :isPlayedBy :Sarah_Paulson .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Langdon_Family
+:Langdon_Family rdf:type owl:NamedIndividual ,
+                         :Family ;
+                :hasMember :Constance_Langdon ,
+                           :Tate_Langdon .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Lily_Rabe
+:Lily_Rabe rdf:type owl:NamedIndividual ,
+                    :Actor .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Los_Angeles
+:Los_Angeles rdf:type owl:NamedIndividual ,
+                      :City ;
+             :isLocatedIn :California .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Louisiana
+:Louisiana rdf:type owl:NamedIndividual ,
+                    :State ;
+           rdfs:sameAs "https://dbpedia.org/page/Louisiana" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Mary_Eunice_McKee
+:Mary_Eunice_McKee rdf:type owl:NamedIndividual ,
+                            :Character ,
+                            :Human ;
+                   :hasAppearanceIn :Tricks_and_Treats ,
+                                    :Welcome_to_Briarcliff ;
+                   :isPlayedBy :Lily_Rabe .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Massachusetts
+:Massachusetts rdf:type owl:NamedIndividual ,
+                        :State .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Murder_House
+:Murder_House rdf:type owl:NamedIndividual ,
+                       :Episode ;
+              :isAfterEpisode :Home_Invasion ;
+              :isFromSeason :American_Horror_Story_Murder_House ;
+              :hasEpisodeNumber 3 .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#New_Orleans
+:New_Orleans rdf:type owl:NamedIndividual ,
+                      :City ;
+             :isLocatedIn :Louisiana .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Nora_Montgomery
+:Nora_Montgomery rdf:type owl:NamedIndividual ,
+                          :Character ,
+                          :Ghost ;
+                 :hasAppearanceIn :Murder_House ;
+                 :isPlayedBy :Lily_Rabe .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Pilot
+:Pilot rdf:type owl:NamedIndividual ,
+                :Episode ;
+       :isBeforeEpisode :Home_Invasion ;
+       :isFromSeason :American_Horror_Story_Murder_House ;
+       :hasEpisodeNumber 1 .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Ryan_Murphy
+:Ryan_Murphy rdf:type owl:NamedIndividual ,
+                      :Director ;
+             :isDirectorOf :Pilot .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Sarah_Paulson
+:Sarah_Paulson rdf:type owl:NamedIndividual ,
+                        :Actor ;
+               rdfs:sameAs "https://dbpedia.org/page/Sarah_Paulson" .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Taissa_Farmiga
+:Taissa_Farmiga rdf:type owl:NamedIndividual ,
+                         :Actor .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tate_Langdon
+:Tate_Langdon rdf:type owl:NamedIndividual ,
+                       :Character ,
+                       :Ghost ,
+                       :Murderer ;
+              :hasAppearanceIn :Home_Invasion ,
+                               :Pilot ;
+              :isChildOf :Constance_Langdon ;
+              :isPlayedBy :Evan_Peters .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Tricks_and_Treats
+:Tricks_and_Treats rdf:type owl:NamedIndividual ,
+                            :Episode ;
+                   :isAfterEpisode :Welcome_to_Briarcliff ;
+                   :isFromSeason :American_Horror_Story_Asylum ;
+                   :hasEpisodeNumber 2 .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Violet_Harmon
+:Violet_Harmon rdf:type owl:NamedIndividual ,
+                        :Character ,
+                        :Human ;
+               :hasAppearanceIn :Home_Invasion ,
+                                :Pilot ;
+               :isChildOf :Ben_Harmon ,
+                          :Vivien_Harmon ;
+               :isPlayedBy :Taissa_Farmiga .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Vivien_Harmon
+:Vivien_Harmon rdf:type owl:NamedIndividual ,
+                        :Character ,
+                        :Human ;
+               :isParentOf :Violet_Harmon ;
+               :isPlayedBy :Connie_Britton .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Welcome_to_Briarcliff
+:Welcome_to_Briarcliff rdf:type owl:NamedIndividual ,
+                                :Episode ;
+                       :isBeforeEpisode :Tricks_and_Treats ;
+                       :isFromSeason :American_Horror_Story_Asylum ;
+                       :hasEpisodeNumber 1 .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Zoe_Benson
+:Zoe_Benson rdf:type owl:NamedIndividual ,
+                     :Character ,
+                     :Witch ;
+            :hasAppearanceIn :Bitchcraft ;
+            :isPlayedBy :Taissa_Farmiga .
+
+
+###  http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara
+<http://www.semanticweb.org/e9_st/ontologies/2022/2/american_horror_story#Moira_O'Hara> rdf:type owl:NamedIndividual ,
+                                                                                                 :Character ,
+                                                                                                 :Ghost ;
+                                                                                        :hasAppearanceIn :Home_Invasion ,
+                                                                                                         :Murder_House ,
+                                                                                                         :Pilot ;
+                                                                                        :isKilledBy :Constance_Langdon ;
+                                                                                        :isPlayedBy :Alexandra_Breckenridge ,
+                                                                                                    :Frances_Conroy .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Building
+                :City
+                :State
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Ghost
+                :Human
+                :Vampire
+                :Witch
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#g> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#e> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasKilled ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Murderer ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Ghost ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#g>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Deceased ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#g>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Witch ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SupernaturalPowersPossessor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasEpisode ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Episode ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Season ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAppearanceIn ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAppearanceIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
